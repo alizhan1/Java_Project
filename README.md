@@ -54,20 +54,11 @@ Give an example
 
 ## Deployment
 
-Add additional notes about how to deploy this on a live system
+* [Travis-CI](https://travis-ci.org/alizhan1/Java_Project/builds/612503720) - continuous integration service
 
 ## Built With
 
-* [Gradle](https://docs.gradle.org/current/userguide/userguide.html) - The web framework used
-
-
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
+* [Gradle](https://docs.gradle.org/current/userguide/userguide.html) - dependency management tool
 
 ## Authors
 
