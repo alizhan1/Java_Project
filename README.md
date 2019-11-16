@@ -4,62 +4,85 @@ This project focuses on providing automated service for customers to
 obtain information about restaurants, which includes ordering food, listing available meals and etc. 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
-### Prerequisites
+### Prerequisites and Installation
+Download and Install [NodeJS](https://nodejs.org/en/download/)
 
-What things you need to install the software and how to install them
+Download and Install [JDK](https://www.oracle.com/technetwork/java/javase/downloads/index.html)
 
+Download and Install [Android Studio](https://www.oracle.com/technetwork/java/javase/downloads/index.html)
+
+Set Environment Variable
 ```
-Give examples
-```
-
-### Installing
-
-A step by step series of examples that tell you how to get a development env running
-
-Say what the step will be
-
-```
-Give the example
+JAVA_HOME: C:\path\to\JavaSDK
+ANDROID_HOME: C:\path\to\AndroidSDK
 ```
 
-And repeat
+React-Native
 
 ```
-until finished
+npm install -g react-native
 ```
 
-End with an example of getting some data out of the system or using it for a little demo
 
-## Running the tests
+### Running
 
-Explain how to run the automated tests for this system
+Step 1:
 
-### Break down into end to end tests
+Run Android Studio
 
-Explain what these tests test and why
+Step 2:
+
+Launch Your Emulator
+
+Step 3:
+
+Go to Project Folder
+
+Step 4:
+
+Open 1st terminal and run this command
 
 ```
-Give an example
+yarn start
 ```
 
-### And coding style tests
+Step 5:
 
-Explain what these tests test and why
+Open 2nd terminal and run this command
 
 ```
-Give an example
+react-native run-android
+```
+
+And you are ready to go
+
+## Build
+
+for Windows
+
+```
+/path/to/project/folder/gradlew.bat
+```
+
+for Linux: 
+
+```
+/path/to/project/folder
+
+./gradlew
 ```
 
 ## Deployment
 
 * [Travis-CI](https://travis-ci.org/alizhan1/Java_Project/builds/612503720) - continuous integration service
 
-## Built With
+## Dependency management
 
 * [Gradle](https://docs.gradle.org/current/userguide/userguide.html) - dependency management tool
 
 ## Authors
 
-* **Alizhan Akhmetkaliyev** - *CEO*
+* **Alizhan Akhmetkaliyev**
+* **Nathaniel Remy**
