@@ -2,7 +2,7 @@ package BackApp;
 
 import org.junit.Test;
 
-class RestaurantTest {
+public class RestaurantTest {
 
     @Test
     void addToCartTest() {
