@@ -7,72 +7,48 @@ obtain information about restaurants, which includes ordering food, listing avai
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
 ### Prerequisites and Installation
-Download and Install [NodeJS](https://nodejs.org/en/download/)
 
 Download and Install [JDK](https://www.oracle.com/technetwork/java/javase/downloads/index.html)
-
-Download and Install [Android Studio](https://www.oracle.com/technetwork/java/javase/downloads/index.html)
 
 Set Environment Variable
 ```
 JAVA_HOME: C:\path\to\JavaSDK
-ANDROID_HOME: C:\path\to\AndroidSDK
 ```
 
-React-Native
+## Directory Structure
 
 ```
-npm install -g react-native
+└── src
+    └── main
+        └── java
+            └── BackApp
+                └── Application.java
+                └── Restaurant.java
+                └── RestaurantController.java
+                └── Service.java
+            └── resources
+                └── Restaurant.json
+        └── test
+            └── java
+                └── BackApp
+                    └── RestaurantControllerTest.java
+                    └── RestaurantTest
+                
 ```
 
-
-### Running
-
-Step 1:
-
-Run Android Studio
-
-Step 2:
-
-Launch Your Emulator
-
-Step 3:
-
-Go to Project Folder
-
-Step 4:
-
-Open 1st terminal and run this command
+## Running
 
 ```
-yarn start
+./mvnw spring-boot:run
 ```
 
-Step 5:
-
-Open 2nd terminal and run this command
+Then open your browser and go to 
 
 ```
-react-native run-android
+http://localhost:8080
 ```
 
-And you are ready to go
-
-## Build
-
-for Windows
-
-```
-/path/to/project/folder/gradlew.bat
-```
-
-for Linux: 
-
-```
-/path/to/project/folder
-
-./gradlew
-```
+There you can make POST, GET, PUT, DELETE requests
 
 ## Deployment
 
@@ -80,7 +56,7 @@ for Linux:
 
 ## Dependency management
 
-* [Gradle](https://docs.gradle.org/current/userguide/userguide.html) - dependency management tool
+* [Maven](https://maven.apache.org/guides/) - dependency management tool
 
 ## Authors
 
