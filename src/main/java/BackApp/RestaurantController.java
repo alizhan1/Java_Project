@@ -28,4 +28,10 @@ public class RestaurantController {
     public String getRestaurantName() {
         return selectedRestaurant.getRestaurantName();
     }
+
+    public static void main(String[] args) {
+        for (int i = 0; i < ALL_RESTAURANTS.size(); i++) {
+            System.out.println(ALL_RESTAURANTS.get(i).neighbourhood);
+        }
+    }
 }
