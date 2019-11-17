@@ -1,6 +1,14 @@
 package BackApp;
 
+import java.util.List;
+
 public class Restaurant implements Service {
+
+    public static String name;
+
+    public Restaurant(String name) {
+        this.name = name;
+    }
 
     @Override
     public boolean addToCart(String meal) {
@@ -14,7 +22,7 @@ public class Restaurant implements Service {
 
     @Override
     public String getRestaurantName() {
-        return null;
+        return this.name;
     }
 
     @Override
@@ -22,7 +30,7 @@ public class Restaurant implements Service {
         return false;
     }
 
-    public static void main(String[] args) {
-
+    public static List<Restaurant> getAll() {
+        return null;
     }
 }
