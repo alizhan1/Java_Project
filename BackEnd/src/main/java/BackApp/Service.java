@@ -6,7 +6,7 @@ public interface Service {
 
     public Integer availableTables();
 
-    public String getName();
+    public String getRestaurantName();
 
     public boolean bookTable(Integer tableId);
 }

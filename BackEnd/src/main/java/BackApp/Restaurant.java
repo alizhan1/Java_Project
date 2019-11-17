@@ -1,6 +1,7 @@
 package BackApp;
 
 public class Restaurant implements Service {
+
     @Override
     public boolean addToCart(String meal) {
         return false;
@@ -12,7 +13,7 @@ public class Restaurant implements Service {
     }
 
     @Override
-    public String getName() {
+    public String getRestaurantName() {
         return null;
     }
 
