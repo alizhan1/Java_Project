@@ -20,4 +20,8 @@ public class Restaurant implements Service {
     public boolean bookTable(Integer tableId) {
         return false;
     }
+
+    public static void main(String[] args) {
+
+    }
 }
