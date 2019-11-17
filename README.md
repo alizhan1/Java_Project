@@ -1,7 +1,8 @@
 # Restaurant Service
 
-This project focuses on providing automated service for customers to 
-obtain information about restaurants, which includes ordering food, listing available meals and etc. 
+This project focuses on providing automated services for customers to 
+obtain information about restaurants. The information requested can include ordering food,
+listing available meals, checking for open reservations and finding a great restaurant in your city!
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
