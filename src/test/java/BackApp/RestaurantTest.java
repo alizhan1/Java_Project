@@ -5,19 +5,19 @@ import org.junit.Test;
 public class RestaurantTest {
 
     @Test
-    void addToCartTest() {
+    public void addToCartTest() {
     }
 
     @Test
-    void availableTablesTest() {
+    public void availableTablesTest() {
     }
 
     @Test
-    void getNameTest() {
+    public void getNameTest() {
     }
 
     @Test
-    void bookTableTest() {
+    public void bookTableTest() {
     }
 
 }
