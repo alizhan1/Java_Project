@@ -2,26 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5fb8c3c1-fbdf-44fd-ab76-347032a50cba" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_activation_javax_activation_api_1_2_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_xml_bind_jaxb_api_2_3_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/com_google_code_gson_gson_2_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/com_google_code_gson_gson_2_8_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/BackApp/Restaurant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BackEnd/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BackEnd/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.travis.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BackEnd/checkstyle-suppressions.xml" beforeDir="false" afterPath="$PROJECT_DIR$/checkstyle-suppressions.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BackEnd/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BackEnd/src/main/java/BackApp/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BackApp/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BackEnd/src/main/java/BackApp/Restaurant.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BackEnd/src/main/java/BackApp/RestaurantController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BackApp/RestaurantController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BackEnd/src/main/java/BackApp/Service.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BackApp/Service.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BackEnd/src/main/resources/Restaurant.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Restaurant.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BackEnd/src/test/java/BackApp/RestaurantControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BackApp/RestaurantControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BackEnd/src/test/java/BackApp/RestaurantTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BackApp/RestaurantTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/BackApp/Restaurant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BackApp/Restaurant.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

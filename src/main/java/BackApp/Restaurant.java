@@ -13,13 +13,13 @@ import java.util.SortedSet;
 public class Restaurant implements Service {
 
     public String name, cuisineType, neighbourhood;
-    double avgRating;
+    double averagegRating;
 
     public Restaurant(String name, String cuisineTpe, String neighbourhood, double avgRating) {
         this.name = name;
         this.cuisineType = cuisineTpe;
         this.neighbourhood = neighbourhood;
-        this.avgRating =  avgRating;
+        this.averagegRating =  avgRating;
     }
 
     @Override
