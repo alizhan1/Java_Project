@@ -4,7 +4,7 @@ import java.util.List;
 
 public class Restaurant implements Service {
 
-    public static String name;
+    public String name;
 
     public Restaurant(String name) {
         this.name = name;
