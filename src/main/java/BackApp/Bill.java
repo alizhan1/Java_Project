@@ -1,18 +1,20 @@
 package BackApp;
 
 import java.util.Date;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
 public class Bill {
 
-    private static Integer billNumber = 0;
+    private static Integer counter = 0;
 
+    private Integer billNumber;
     private Payment payment;
     private Date date;
     private Integer tableId;
     private Integer waiterId;
-    private Map<String, Integer> orderMap;
+    private Map<String, Integer> orderMap = new HashMap<>();
 
     public Bill(Integer paymentMethod, Waiter waiter, List<Food> orders) {
         this.payment = new Payment(paymentMethod);
@@ -20,16 +22,17 @@ public class Bill {
         this.tableId = waiter.getAssignedTable();
         this.waiterId = waiter.getWaiterId();
         for (Food order : orders) {
-            orderMap.add(order.getName(), order.getPrice());
+            orderMap.put(order.getName(), order.getPrice());
         }
-        this.billNumber++;
+        this.billNumber = counter;
+        this.counter++;
     }
 
     public Date getDate() {
         return date;
     }
 
-    public static Integer getBillNumber() {
+    public Integer getBillNumber() {
         return billNumber;
     }
 
