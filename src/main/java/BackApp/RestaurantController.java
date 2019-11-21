@@ -12,7 +12,7 @@ import static org.springframework.web.bind.annotation.RequestMethod.POST;
 @RestController
 public class RestaurantController {
 
-    private static final List<Restaurant> ALL_RESTAURANTS = Restaurant.getAll();
+    private static List<Restaurant> ALL_RESTAURANTS;
     private static Restaurant selectedRestaurant;
 
     @RequestMapping(value = "/selectRestaurant", method=POST)
@@ -31,7 +31,7 @@ public class RestaurantController {
 
     public static void main(String[] args) {
         for (int i = 0; i < ALL_RESTAURANTS.size(); i++) {
-            System.out.println(ALL_RESTAURANTS.get(i).neighbourhood);
+            System.out.println(ALL_RESTAURANTS.get(i));
         }
     }
 }

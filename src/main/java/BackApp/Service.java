@@ -2,7 +2,7 @@ package BackApp;
 
 public interface Service {
 
-    public boolean addToCart(String meal);
+    public boolean orderFood(String meal);
 
     public Integer availableTables();
 
