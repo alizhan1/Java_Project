@@ -1,10 +1,15 @@
 package BackApp;
 
+import java.util.concurrent.TimeUnit;
+
 public class Chief extends Person {
 
-    Restaurant restaurant;
+    private Integer orderId = 0;
 
-    public String update() {
-        return "I am making food";
+    public synchronized void update(Food food) throws InterruptedException {
+        System.out.println("Order #" + orderId + " has been accepted. " + food.getName());
+        TimeUnit.SECONDS.sleep(2);
+        food.setIsReady(true);
     }
+
 }
