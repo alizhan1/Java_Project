@@ -11,6 +11,7 @@ import java.util.Map;
 
 public class Restaurant implements Service {
 
+    public static Gson gson = new Gson();
     public String name;
     public CuisineType cuisineType;
     public Chief chief;
@@ -32,17 +33,32 @@ public class Restaurant implements Service {
     }
 
     @Override
-    public boolean orderFood(String meal) {
-        return false;
+    public void orderFood(String foodName) {
+        List<Food> foods = menu.getFoods();
+        for (Food food : foods) {
+            if (food.getName() == foodName) {
+                try {
+                    chief.update(food);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
     }
 
     public String getMenu() {
-        return null;
+        return gson.toJson(menu);
     }
 
     @Override
     public Integer availableTables() {
-        return null;
+        Integer availableTables = 0;
+        for (Table table : tables) {
+            if (!table.isOccupied()) {
+                availableTables++;
+            }
+        }
+        return availableTables;
     }
 
     @Override
@@ -51,48 +67,14 @@ public class Restaurant implements Service {
     }
 
     @Override
-    public boolean bookTable(Integer tableId) {
-        return false;
-    }
-
-//    public static List<Restaurant> getAll() {
-//        Gson gson = new Gson();
-//        JsonReader reader = getJSONReader();
-//        Map<String, ?> jsonDict = gson.fromJson(reader, Object.class);
-//        ArrayList<?> json = (ArrayList<?>) jsonDict.get("restaurants");
-//
-//        ArrayList<Restaurant> restos = new ArrayList<>();
-//
-//        for (int i = 0; i < json.size(); i++) {
-//            Map<String, ?> restaurantJSON = (Map<String, ?>) json.get(i);
-//            ArrayList<?> reviews = (ArrayList<?>) restaurantJSON.get("reviews");
-//
-//            double totalRating = 0;
-//            for (int j = 0; j < reviews.size(); j++) {
-//                Map<String, ?> reviewDict = (Map<String, ?>) reviews.get(j);
-//                Object value = reviewDict.get("rating");
-//                totalRating += (double) value;
-//            }
-//
-//            double rating = totalRating/reviews.size();
-//            String name = (String) restaurantJSON.get("name");
-//            String cuisineType = (String) restaurantJSON.get("cuisine_type");
-//            String neighbourhood = (String) restaurantJSON.get("neighborhood");
-//
-//            Restaurant resto = new Restaurant(name, cuisineType, neighbourhood, rating);
-//            restos.add(resto);
-//            }
-//
-//        return restos;
-//    }
-
-    public static JsonReader getJSONReader() {
-        JsonReader reader = null;
-        try {
-            reader = new JsonReader(new FileReader("src/main/Resources/Restaurant.json"));
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
+    public void bookTable(Integer numberOfPeople) {
+        for (Table table : tables) {
+            if (!table.isOccupied() && (table.getCapacity() >= numberOfPeople)) {
+                table.occupy();
+                break;
+            }
         }
-        return reader;
+        System.out.println("Table has been booked");
     }
+
 }

@@ -1,7 +1,6 @@
 package BackApp;
 
 public abstract class Person {
-
     private String firstname;
     private String lastname;
     private String gender;

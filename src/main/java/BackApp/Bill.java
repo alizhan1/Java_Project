@@ -6,7 +6,6 @@ import java.util.List;
 import java.util.Map;
 
 public class Bill {
-
     private static Integer counter = 0;
 
     private Integer billNumber;

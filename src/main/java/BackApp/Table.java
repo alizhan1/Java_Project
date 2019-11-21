@@ -2,18 +2,19 @@ package BackApp;
 
 public class Table {
     private int capacity;
-    public int getCapacity() {
-        return capacity;
+    private boolean isOccupied;
+
+    public Table(int capacity, boolean isOccupied) {
+        this.capacity = capacity;
+        this.isOccupied = isOccupied;
     }
 
-    private boolean isOccupied;
     public boolean isOccupied() {
         return isOccupied;
     }
 
-    public Table(int _capacity, boolean _isOccupied) {
-        this.capacity = _capacity;
-        this.isOccupied =_isOccupied;
+    public int getCapacity() {
+        return capacity;
     }
 
     public void occupy() {

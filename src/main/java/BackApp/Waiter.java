@@ -1,7 +1,6 @@
 package BackApp;
 
 public class Waiter extends Person {
-
     private static Integer counter = 0;
 
     private Integer assignedTable;

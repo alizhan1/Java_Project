@@ -1,7 +1,6 @@
 package BackApp;
 
 public class Location {
-
     private String neighbourhood;
     private String address;
     private double latitude;
