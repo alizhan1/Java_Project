@@ -1,9 +1,9 @@
 package BackApp;
 
 public class Bill {
-    private Payment payment;
+    private String payment;
 
-    public Bill(Payment payment) {
+    public Bill(String payment) {
         this.payment = payment;
     }
 }

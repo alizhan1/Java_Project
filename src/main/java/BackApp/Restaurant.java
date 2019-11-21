@@ -11,7 +11,7 @@ import java.util.Map;
 
 public class Restaurant implements Service {
 
-    public static Bill = new Bill("MasterCard");
+    public static Bill bill = new Bill("MasterCard");
 
     public String name;
     public CuisineType cuisineType;
