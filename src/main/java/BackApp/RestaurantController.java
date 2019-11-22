@@ -149,6 +149,7 @@ public class RestaurantController {
             }
 
             ArrayList<Waiter> waiters = new ArrayList<>();
+            waiters.add(new Waiter());
 
             Map<String, ?> locationJSON = (Map<String, ?>) restaurantJSON.get("location");
             String locNeighbourhood = (String) locationJSON.get("neighborhood");

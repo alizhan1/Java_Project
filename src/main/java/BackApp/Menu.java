@@ -44,8 +44,8 @@ public class Menu {
     public String menuInAscending() {
         for(int i = 0; i < foods.size(); i++){
             for(int j = i + 1; j < foods.size(); j++){
-                Integer tempI = foods.get(i).getPrice();
-                Integer tempJ = foods.get(j).getPrice();
+                double tempI = foods.get(i).getPrice();
+                double tempJ = foods.get(j).getPrice();
 
                 if(tempI > tempJ) {
                     Collections.swap(foods, i, j);
@@ -58,8 +58,8 @@ public class Menu {
     public String menuInDescending() {
         for(int i = 0; i < foods.size(); i++){
             for(int j = i + 1; j < foods.size(); j++){
-                Integer tempI = foods.get(i).getPrice();
-                Integer tempJ = foods.get(j).getPrice();
+                double tempI = foods.get(i).getPrice();
+                double tempJ = foods.get(j).getPrice();
 
                 if(tempI < tempJ) {
                     Collections.swap(foods,i, j);
