@@ -2,11 +2,11 @@ package BackApp;
 
 public class Food {
     private String name;
-    private Integer price;
+    private double price;
     private String description;
     private boolean isReady = false;
 
-    public Food(String name, String description, Integer price) {
+    public Food(String name, String description, double price) {
         this.name = name;
         this.description = description;
         this.price = price;
@@ -20,7 +20,7 @@ public class Food {
         return this.description;
     }
 
-    public Integer getPrice() {
+    public double getPrice() {
         return this.price;
     }
 

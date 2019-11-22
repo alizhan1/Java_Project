@@ -11,7 +11,6 @@ import java.util.Map;
 
 public class Restaurant implements Service {
 
-    public static Gson gson = new Gson();
     public String name;
     public CuisineType cuisineType;
     public Chief chief;
@@ -46,8 +45,8 @@ public class Restaurant implements Service {
         }
     }
 
-    public String getMenu() {
-        return gson.toJson(menu);
+    public Menu getMenu() {
+        return menu;
     }
 
     @Override
@@ -75,6 +74,14 @@ public class Restaurant implements Service {
             }
         }
         System.out.println("Table has been booked");
+    }
+
+    public List<Review> getReviews() {
+        return reviews;
+    }
+
+    public Waiter getWaiter() {
+        return waiters.get(0);
     }
 
 }

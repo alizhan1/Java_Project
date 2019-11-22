@@ -6,11 +6,11 @@ public class Location {
     private double latitude;
     private double longitude;
 
-    public Location(String _neighbourhood, String _address, double _latitude, double _longitude) {
-        this.neighbourhood = _neighbourhood;
-        this.address = _address;
-        this.latitude = _latitude;
-        this.longitude = _longitude;
+    public Location(String neighbourhood, String address, double latitude, double longitude) {
+        this.neighbourhood = neighbourhood;
+        this.address = address;
+        this.latitude = latitude;
+        this.longitude = longitude;
     }
 
     public String getNeighbourhood() {

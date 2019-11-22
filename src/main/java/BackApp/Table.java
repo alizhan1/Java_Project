@@ -1,10 +1,10 @@
 package BackApp;
 
 public class Table {
-    private int capacity;
+    private double capacity;
     private boolean isOccupied;
 
-    public Table(int capacity, boolean isOccupied) {
+    public Table(double capacity, boolean isOccupied) {
         this.capacity = capacity;
         this.isOccupied = isOccupied;
     }
@@ -13,7 +13,7 @@ public class Table {
         return isOccupied;
     }
 
-    public int getCapacity() {
+    public double getCapacity() {
         return capacity;
     }
 

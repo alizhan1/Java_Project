@@ -6,17 +6,17 @@ import java.util.ArrayList;
 import java.util.Collections;
 
 public class Menu {
-    private CuisineType cuisineType;
+    private String cuisineType;
     private ArrayList<Food> foods;
-    private Restaurant restaurant;
+    private String restaurantName;
 
-    public Menu(Restaurant _restaurant) {
-        this.restaurant = _restaurant;
-        this.getMenuFor(_restaurant);
-        this.cuisineType = _restaurant.cuisineType;
+    public Menu(String restaurantName, String cuisineType, ArrayList<Food> foods) {
+        this.restaurantName = restaurantName;
+        this.cuisineType = cuisineType;
+        this.foods = foods;
     }
 
-    public CuisineType getCuisineType() {
+    public String getCuisineType() {
         return cuisineType;
     }
 
@@ -24,16 +24,8 @@ public class Menu {
         return foods;
     }
 
-    public Restaurant getRestaurant() {
-        return restaurant;
-    }
-
-    public void getMenuFor(Restaurant restaurant) {
-        //Get food items served at this restaurant from JSON and put them into foods array
-
-        for(int i = 0; i < 10; i++) {
-            this.foods.add(new Food("Test chicken", "Some scrumptious chicken like gramma's", 15));
-        }
+    public String getRestaurantName() {
+        return restaurantName;
     }
 
     public void removeItem(Food food) {
@@ -60,7 +52,6 @@ public class Menu {
                 }
             }
         }
-
         return new Gson().toJson(foods);
     }
 
@@ -75,7 +66,6 @@ public class Menu {
                 }
             }
         }
-
         return new Gson().toJson(foods);
     }
 }

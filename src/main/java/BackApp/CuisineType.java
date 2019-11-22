@@ -2,23 +2,22 @@ package BackApp;
 
 public class CuisineType {
     private String name;
+    private String countryOfOrigin;
+    private String description;
+
+    public CuisineType(String name, String countryOfOrigin, String description) {
+        this.name = name;
+        this.countryOfOrigin = countryOfOrigin;
+        this.description = description;
+    }
+
     public String getName() {
         return this.name;
     }
-
-    private String countryOfOrigin;
     public String getCountryOfOrigin() {
         return countryOfOrigin;
     }
-
-    private String description;
     public String getDescription() {
         return description;
-    }
-
-    public CuisineType(String _name, String _countryOfOrigin, String _description) {
-        this.name = _name;
-        this.countryOfOrigin = _countryOfOrigin;
-        this.description = _description;
     }
 }
